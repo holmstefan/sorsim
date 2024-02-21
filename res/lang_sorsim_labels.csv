@@ -1,0 +1,173 @@
+'bezeichner;de;fr;en
+mnuDatei;Datei;Fichier;File
+mnuStandardModus;Standard-Modus;Mode standard;Standard mode
+mnuExtendedModus;Erweiterter Modus;Mode élargi;Extended mode
+mnuBeenden;Schliessen;Fermer;Close
+mnuHilfe;Hilfe;Aide;Help
+mnuInfo;Info;Info;Info
+mnuTools;Tools;Outil;Tools
+mnuSvListeBearbeiten;Sortimentsvorgaben-Listen bearbeiten;Adapter les listes des specifications des assortiments;Modify list of assortment specifications
+mnuBaumartenListeAnzeigen;Baumartenliste anzeigen;Afficher la liste des essences;Show tree species-list
+mnuHandbuch;Handbuch;Manuel;Manual
+btnSortimentStueckInBsEinpassen;Sortimentstueck in Baumschaft einpassen;Emboîter des assortiments dans la tige;Fit assortments in tree stem
+btnSortimentsTabelleErstellen;Sortimentstabelle erstellen;Créer une table d' assortiments;Create timber assortment table
+btnBaumlisteSortimentieren;Baumliste sortimentieren;Diviser une liste d'arborescence en assortiments;Fit assortments in tree list
+lblGewaehlteSchaftformFkt;Gewählte Schaftform-Funktion:;Fonction de la forme de la tige choisie:;Selected stem form function:
+lblCode_Baumart;Code: Baumart:;Code: Essence:;Code: Tree species:
+lblOptionen;Optionen;Options;Options
+lblSprachcode;Sprachcode;Code de langue;Language code
+lblSchaftformFkt;Schaftform-Funktion;Fonction de la forme de la tige;Stem form function
+lblNachkommastellen;Genauigkeit der Ergebnisse (Anzahl Nachkommastellen);Précision des résultats (nombre de décimales);Accuracy of the results (number of decimal digits)
+lblBaumschaft;Baumschaft;tige;Tree stem
+lblSchaftdefinition;Schaftdefinition;Définition de la tige;Stem definition
+lblBaumartCode;Baumart;Espèce;Species
+'lblMesshoeheAmSchaftObererDrm_m;Messhöhe am Schaft für oberen Durchmesser (m);Position à la tige pour mesurer le diamètre supérieur;Position in m at upper stem diameter (m)
+'lblMesshoeheAmSchaftUntererDrm_m;Messhöhe am Schaft für unteren Durchmesser (m);Position à la tige pour mesurer le diamètre inférieur;Position in m at lower stem diameter (m)
+'lblObererDrmIR_cm;Oberer Durchmesser (in Rinde / cm);Diamètre supérieur (en écorce / cm);Upper diameter (in bark / cm)
+'lblUntererDrm_IR_cm;Unterer Durchmesser (in Rinde / cm);Diamètre inférieur (en écorce / cm);Lower diameter (in bark / cm)
+lblUntererDrm_IR_cm;BHD (cm);DHP (cm);DBH (cm)
+lblObererDrmIR_cm;D7m (cm);D7 (diamètre en hauteur de 7m);Diameter at 7m height D7m (cm)
+lblInRinde;in Rinde;En écorce;In bark
+lblSchaftlaenge_m;Schaftlänge (m);Longueur de la tige (m);Stem length (m)
+lblSortimentsVorgaben;Sortimentsvorgaben;Spécifications des assortiments ;Timber assortment specifications
+lblAushalteStrategie;Aushalte-Strategie;Stratégie du sectionnement;Sustain strategy
+SortimentsAushalteStrategie.MinimalLaenge;Minimale Länge;Longueur minimale;Minimal length
+SortimentsAushalteStrategie.MaximalLaenge;Maximale Länge;Longueur maximale;Maximal length
+lblPositionierung;Positionierung;Positionnement;Positioning
+SortimentsStueckPositionierung.ZuUnterst;Zu Unterst;Sur le fond;Bottom
+'ESortimentsStueckPositionierung.Irgendwo;Irgendwo ;Quelque part;Anywhere
+SortimentsStueckPositionierung.ZuOberst;Zu Oberst;Au sommet;Top
+lblIntervall_m;Intervall (m);Intervalle (m);Interval (m)
+lblMin;Min.;Min.;Min.
+lblMax;Max.;Max.;Max.
+lblPosAmStamm;Position am Stamm;position à la tige;Position on the stem
+lblLaenge_m;Länge (m);Longueur (m);Length (m)
+lblMiDrm_cm;Mittendurchmesser (cm);Diamètre moyen de l'assortiment (cm);Diameter in the middle of the assortment (cm)
+lblZopfDrm_cm;Zopfdurchmesser (cm);Diamètre au petit bout (cm);Top diameter (cm)
+lblStarten;Starten;Calculer;Run
+lblErgebnis;Ergebnis;Résultat;Result
+lblBerechnungStarten;Berechnung starten;Démarrer le calcul;Start calculation
+lblInfo;Info;Info;Info
+lblBaeume;Bäume;Arbres;Trees
+lblLaengenklasenKuerzel;Längenklassenkürzel (L3, L2, L1 oder Kombinationen);Classe de longueur (L3, L2, L1, ou des combinaisons);Combination of length classes (L3, L2, L1, or combinations)
+lblZuVerwendenderSchaftanteil;Zu verwendender Schaftanteil (%);Part d'utilisation de tronc (%);Bole percentage to be used (%)
+lblMindestZopf_cm;Mindestzopf (cm);Diamètre au petit bout minimale (cm);Minimal top diameter (cm)
+lblVon;Von;De;from
+lblBis;Bis;à;to
+lblBHD_cm;BHD (cm);DHP (cm);DBH (cm)
+lblSortimentieren;Sortimentieren;Sectionner le tronc en assortiments;Make assortments
+lblBitteWarten;Bitte warten...;Un instant s'il vous plait ...;Please wait...
+lblBaumliste;Baumliste;Liste des arbres;Tree list
+lblBaumlistenFile;Baumlisten-Datei;Fichier de la liste des  arbres;Tree list file
+lblQualitaet;Qualität;Qualité;Quality
+lblSortimentsVorgabenFile;Datei mit Sortimentsvorgaben;Fichier avec les spécifications des assortiments;File with Assortment specifications
+lblKriterium;Sortierkriterium;Critère de sectionnement;Sorting  criterium
+lblReihenfolge;Reihenfolge;Suite;order of
+lblWeitereSortierbedingungen;Weitere Sortierbedingungen;Autres specifications des assortiments;Other timberr assortment specifications
+lblMindestZopf_cm_ext;Mindest-Zopf (cm, übersteuert Wert der Sortimentsvorgabe);Diamètre minimal au petit bout (remplace la valeur indiquée par la spécification des assortiments;"Minimum ""Zopf"" in (cm, overrides the value of assortment specification)"
+lblPruefschrittweite;Prüfschrittweite am Baumschaft (m);Incrément du test à la tige (m);Test step size on the bole (m)
+lblDarstellungErgebnisse;Darstellung der Ergebnisse;Présentation des résultats;Expression of results
+lblSortimentsStuecklistenFile;Sortiments-Stücklisten-Dateiname;Nom du fichier des assortiments;File name of timber assortment list
+lblErstellteSortimenteInAusgabeDateiSchreiben;Erstellte Sortimente in Ausgabedatei schreiben;Inscrire les assortiment calculés dans le champ d'affichage;Write generated assortments  to output file
+lblDateiAuswaehlen;Datei auswählen;Choisir un fichier;Select File
+baumart_Ahorn;Ahorn;Érable;Maple
+baumart_Buche;Buche;Hêtre;Beech
+baumart_Eiche;Eiche;Chêne;Oak
+baumart_Esche;Esche;Frêne;Ash
+baumart_Fichte;Fichte;Epicéa;Spruce
+baumart_Foehre;Föhre;Le pin sylvestre;Scots pine
+baumart_Laerche;Lärche;Mélèze;Larch
+baumart_Tanne;Tanne;Sapin;Fir
+baumart_UebrigesLaubholz;Übriges Laubolz;Autres feuillus;Other broadleaf tree
+baumart_UebrigesNadelholz;Übriges Nadelholz;Autres résineux;Other coniferous tree
+baumart_Unbekannt;Unbekannt;Inconnu;Unknown
+SortOrder.Ascending;Aufsteigend;Montant;Ascending
+SortOrder.Descending;Absteigend;Déscendant;Descending
+SortierKriterium.MittenDurchmesserMax;Maximaler Mittendurchmesser;Diamètre moyenne maximale;Max. middle diameter
+SortierKriterium.MittenDurchmesserMin;Mittendurchmesser Minimal;Diamètre moyenne minimale;Middle diameter min.
+SortierKriterium.LaengeMax;Maximale Länge;Longueur maximale;Max. length
+SortierKriterium.LaengeMin;Länge Minimal;Longueur minimale;Lenght min.
+SortierKriterium.WertProEinheit;Maximaler Wert;Valeur maximale;Max. value.
+lblDoppelKlickZumOeffnen;Doppelklicken, um Datei zu öffnen;Double-cliquer pour ouvrir le fichier;Double-click to open file
+lblSchaftanteilBerechnen;Bei Laubholz automatisch berechnen;Calculer automatiquement en cas de feuillus;In case of Hardwood calculate automatically 
+errFehler;Fehler;Erreur;Error
+errFehlerBeimOeffnenDerDatei;Fehler beim Öffnen der Datei;Erreur en ouvrant le fichier;Error opening file
+errDateiSchreibFehler;Fehler beim Schreiben der Datei:;Erreur en écrivant le fichier;Error writing file
+errNumberInputVerifier1;Fehler: Wert muss zwischen;Erreur: La valeur doit être située entre;Error: value must be between
+errNumberInputVerifier2;und;et;and
+errNumberInputVerifier3;liegen!;;
+errKeineSortimenteErstellt;Es wurden keine Sortimente erstellt.\n\nMöglicherweise waren keine passenden Sortiments-\nvorgaben für die gegebene Baumliste vorhanden.;Le sectionnement n'a pas été effectué \ éventuellement pour la liste des arbres il n'y avait pas de spécifications d'assortiment appropriées;No assortments were created. Perhaps the Assortment specifications were not suitable for the given tree list.
+errSummeNicht100;Anteile müssen im Total 100% ergeben!;Le total des parts doit ètre le 100%!;Sum of the shares is not equal to 100%
+lblBaumartenliste;Baumartenliste;Liste des essences;Tree species list
+lblZusammenfassungErgebnis;Zusammenfassung Ergebnis;Résumée des résultats;Summary of the results
+lblGesamtwert;Gesamtwert:;Valeur totale:;Total value
+lblGesamtvolumenORm3;Gesamtvolumen OR m3:;Volume total sans écorce (m3):;Total volume without bark in m3:
+lblAnzahlSortimente;Anzahl Sortimente:;Nombre d'assortiments:;Number of assortments:
+lblZieldatei;Erstellte Sortimentsliste in folgende Ausgabedatei schreiben:;Inscrire la liste des assortiments dans le fichier d'affichage suivant:;Write generated assortment list  to the following output file:
+lblLaden;Laden;Charger;Load
+lblSpeichern;Speichern;Enregistrer;Save
+titleId;ID;ID;ID
+titleBaumId;Baum-ID;Identification de l'arbre;Tree-ID
+titleBaumart;Baumart;Espèce;species
+titleBaumartCode;Baumart-Code;Code de l'espèce;species code
+titleBeschriebBaumNr;Beschrieb/BaumNr;Description/Numéro de l'arbre;Description / tree number:
+'titleAufnahmeDatum;Aufnahmedatum;Date du relevé;Recording date
+titleStratifizierungsMerkmal;Gruppierungsmerkmal;critère de groupement;grouping characteristic
+titleBHD;BHD [cm];DHP [cm];DBH [cm]
+titleSchaftlaenge;Schaftlänge [m];Longueur de la tige [m];Stem length [m]
+titleLaengenklasse;Längenklasse;Classe de longueur ;Length class
+titleStaerkenklasse;Stärkenklasse;Classe de diamètre;Diameter class
+titlePosBasisAmStamm_m;Position Sortimentsbasis am Stamm [m];Position à la tige du bout inférieur de l'assortiment  [m];Location of the  assortment base on the trunk [m]
+titleLaenge_m;Länge [m];Longueur [m];Length [m]
+titleBasisDrmOR;Basis-Drm OR;Diamètre au bout inférieur, sans écorce [cm];Drm at base  w.b. [cm]
+titleMiDrmOR_cm;Mitten-Durchm. OR [cm];Diamètre au milieu, sans écorce [cm];Middle-diam. w.b.[cm]
+titleZopfDrmOR_cm;Zopf-Durchm. OR [cm];Diamètre au bout supérieur, sans écorce  [cm];"""Zopf""-diam. w.b.[cm]"
+titleVolumenOR_m3;Volumen OR [m3];Volume, sans écorce [m3];Volume w.b. [m3]
+titleVolumenIR_m3;Volumen IR [m3];Volume en écorce [m3];Volume i.b. [m3]
+titleVolRestStkUntenOR_m3;Volumen Reststück Unten OR [m3];Volume du bout restant inférieur, sans écorce [m3];Volume remaining piece bottom w.b. [m3]
+titleVolRestStkObenOR_m3;Volumen RestStück Oben OR [m3];Volume du bout restant supérieur, sans écorce [m3];Volume remaining piece top w.b. [m3]
+titleQualitaet;Qualität;Qualité;Quality
+titleWert_CHF;Wert [CHF];Valeur [CHF];Value [CHF]
+titleAnzahl;Anzahl;Nombre;Number
+titleSumme;Summe:;Total:;Total:
+titleAnzahlStueck;Anzahl Stücke;Nombre de pièces;Number of pieces:
+titleLaengeMin_m;LaengeMin [m];Longueur min. [m];Min length [m]
+titleLaengeMax_m;LaengeMax [m];Longueur max. [m];Max length [m]
+titleMittenDrmMin_cm;MittendurchmesserMin [cm];Diamètre au milieu min. [cm];Average diameter at both min [cm]
+titleMittenDrmMax_cm;MittendurchmesserMax [cm];Diàmetre au milieu max. [cm];Average diameter at both max [cm]
+titleZopfDrmMin_cm;ZopfdurchmesserMin [cm];Diamètre au bout supérieur min. [cm];End diameter min [cm]
+titleZopfDrmMax_cm;ZopfdurchmesserMax [cm];Diamètre au bout supérieur max. [cm];End diameter max [cm]
+titleLaengenZugabe_cm;Längenzugabe [cm];Supplément en longueur [cm];Extra length [cm]
+titleLaengenZugabe_Prozent;Längenzugabe [%];Supplément en longueur [%];Extra length [%]
+titlePositionAmStammUnten_m;Position am Stamm unten [m];Position inférieure à la tige [m];Location on the stem bottom [m]
+titlePositionAmStaummOben_m;Position am Stamm oben [m];Position supérieure à la tige [m];Location on the stem top [m]
+titleLaengenIntervall_m;Längen-Intervall [m];Intervalle des longueurs [m];Length interval [m]
+titleAushaltestrategie;Aushalte-Strategie;Stratégie du sectionnement;Sustain strategy
+titlePositionierung;Positionierung;Positionnement;Positioning
+titleWertA;Wert A;Valeur A;Value A
+titleWertB;Wert B;Valeur B;Value B
+titleWertC;Wert C;Valeur C;Value C
+titleWertD;Wert D;Valeur D;Value D
+titleAnteilA;Anteil A;Part A;Proportion A
+titleAnteilB;Anteil B;Part B;Proportion B
+titleAnteilC;Anteil C;Part C;Proportion C
+titleAnteilD;Anteil D;Part D;Proportion D
+titleWertProEinheit;Wert pro Einheit [CHF];Valeur par unité [CHF];Value per unit [CHF]
+lblSvListeBearbeiten;Sortimentsvorgaben-Liste bearbeiten;Adapter la liste des specifications des assortiments;Modify assortment specifications list
+lblSvListeAnmerkungen;Anmerkungen: Mit diesem Editor können Sortimentsvorgabenlisten bearbeitet werden. Jede Zeile in der Tabelle enthält eine einzelne Sortimentsvorgabe. Eine Sortimentsvorgabe ist durch verschiedene Kriterien definiert. Diese sind im Handbuch beschrieben. Die grau hinterlegten Felder sind nicht editierbar. Die weissen Felder können beliebig den Anforderungen des Anwenders angepasst werden. Nachdem Felder angepasst worden sind, muss die geänderte Sortimentsvorgabenliste mit dem Button „Speichern“ wieder gespeichert werden. Mit dem Button „Laden“ können andere, bereits vorhandene Sortimentsvorgabenlisten geladen werden.;Annotation:  Cet éditeur permet d’adapter les spécifications des assortiments. Chaque ligne de la table contient une seule spécification d’assortiment. Une spécification d’assortiment se définit par des critères différentes qui sont décrites dans le manuel. Les cases grisées ne se laissent pas modifier. Les cases blanches peuvent être adaptées selon les besoins de l’utilisateur. Les modifications faites, la liste des spécifications des assortiments doit être enregistrée de nouveau avec le bouton respectif. Le bouton « charger » permet de charger des listes de spécification des assortiments éxistantes.;"Note: Using this editor assortment specification lists can be adapted. Each row in the table holds a single assortment specification. An assortment specification is defined by multiple criteria. These are described in the manual. The gray-hued fields are not editable. The white fields can be adapted to the users needs. After the changes had been made, the assortment specification list must be saved by clicking on the corresponding button. By using the button ""Load"", existing assortment specification lists  can be loaded into the editor."
+errDateiNichtGeschriebenSummeNicht1;Datei wurde nicht geschrieben:\nAnteile A-D müssen für jede Zeile in der Summe 1.0 ergeben.;\le total des parts A-D doit être 1.0 pour chaque ligne;File not written: Proportions A-D must produce for each row in the sum 1.0.
+lblD7m_cm;D7m [cm];D7m [cm];D7m (cm)
+lblD7mBHDRelation;D7m/BHD für Standort;D7m/DHP  pour la station;D7m/DBH for site
+lblD7mBHDRelationExt;D7m/BHD für Standort (bei nicht vorhandenen D7m-Werten);D7m/DHP  pour la station ( si les D7m manquent);D7m/DBH for site (for non-existent D7m values??)
+lblStandortGut;gut;bonne;good
+lblStandortMager;mager;maigre;poor
+lblHoeheAutomatischBerechnen;Schaftlänge automatisch berechnen;Calculer automatiquement la longueur de la tige;Automatically calculated stem length 
+lblHoeheAutomatischBerechnenExt;Schaftlänge automatisch berechnen (bei nicht vorhandenen Werten);Calculer automatiquement la longueur de la tige (en cas de valeurs manquantes);Automatically calculated stem length (if values are missing)??
+lblGrundflächenmittelstamm;Grundflächenmittelstamm [cm];Tige de surface terrière moyenne [cm];Mean basal area tree [cm]
+lblHoeheGrundflaechenmittelstamm;Höhe Grundflächenmittelstamm [m];Hauteur de la tige de surface terrière moyenne [m];Height of mean basal area tree [m]
+lblRestholz;Restholz;Bois résiduel;Residual timber 
+lblStueckvolumen;Mittleres Stückvolumen [m3];Volume moyen des pièces [m3];Average piece volume [m3]
+lblImmerFolgendeStockhoeheVerwenden_cm;Immer folgende Stockhöhe verwenden (cm):;Toujours utiliser le souche d'arbre suivant (cm):;Always use the following stump height (cm):
+lblImmerFolgendenMindestzopfVerwenden_cm;Immer folgenden Mindestzopf verwenden (cm):;Toujours utiliser le diamètre minimal au petit bout suivant (cm):;Always use the following minimal top diameter (cm): 
+lblOben;oben;en haut;top
+lblUnten;unten;en bas;bottom

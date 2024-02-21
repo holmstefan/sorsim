@@ -1,0 +1,5 @@
+#ID;Beschrieb;BaumartCode;LaengenKlasse;DurchmesserKlasse;QualitaetsKlasse;AnzahlStueck;LaengeMin_m;LaengeMax_m;MittenDurchmMin_cm;MittenDurchmMax_cm;ZopfDurchmMin_cm;ZopfDurchmMax_cm;LaengenZugabe_cm;LaengenZugabe_Prozent;WertProEinheit;PositionAmStammUnten_m;PositionAmStammOben_m;LaengenIntervall_m;AushalteStrategie;Positionierung
+24;L1 2b A;100;L1;2b;A;10000;4;6;25;29;18;999;10;0;160;0;999;0.5;MaximalLaenge;Irgendwo
+25;L1 2a A;100;L1;2a;A;10000;4;6;20;24;18;999;10;0;140;0;999;0.5;MaximalLaenge;Irgendwo
+26;L1 1b A;100;L1;1b;A;10000;4;6;15;19;14;999;10;0;50;0;999;0.5;MaximalLaenge;Irgendwo
+27;L1 1a A;100;L1;1a;A;10000;4;6;10;14;0;999;10;0;50;0;999;0.5;MaximalLaenge;Irgendwo

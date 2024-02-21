@@ -1,0 +1,6 @@
+# 23.05.2012/SH / 16.08.2007/VE;;;;;;;
+# File mit Baumliste für Sortimentssimulator;;;;;;;
+# ========================================================;;;;;;;
+#ID;Baumart;Baumart (Code entsprechend verwendeter Schaftformfunktion, z. B. Lemm1991); Beschrieb;Aufnahme-Datum;BHD;D7m; SchaftLaenge_m
+1;Fichte;100; Fichte_1_1;2010;32;28;29
+2;Fichte;100; Fichte_2_2;2010;32;28;29

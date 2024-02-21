@@ -1,0 +1,17 @@
+' 11.06.2007/VE (Dieses File zu implementieren ist kein Muss! Ist zur Zeit auch noch nicht eingerichtet.)
+' 
+' File mit DefaultSteuerParametern für Sortimentssimulator
+' ========================================================
+'
+' TrennZeichenAufBaumartListenFile = ";"
+' TrennZeichenAufSortimentsVorgabenListenFile = ";"
+' TrennZeichenAufSortimentsStueckListenFile = ";"
+' EinheitsZopfDurchmesser_m = "-1"	'Wertebereich: > 0
+' ErmittleSortimenteOberhalbZopf = false
+' SortimenteMoeglichstKurzHalten = false
+' SortimentierungVonSchaftBasisNachOben = true
+' ZuVerwendenderTeilDesSchaftesVonBasisHer = 1	'Wertebereich: 0 - 1
+' PruefSchrittLaengeAmSchaft_m = 0.1	'Wertebereich: > 0
+' KriteriumFuerPriorisierungDerSortimentierVorgaben = "WertProEinheit"	'Wertebereich: (Aufzählung!)
+' SortierReihenfolgeDesKriteriumsFuerPriorisierungDerSortimentierVorgaben = "absteigend"	'Wertebereich: aufsteigend, absteigend
+' ...

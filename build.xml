@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SorSim">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="SorSim.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="ch.wsl.fps.sorsim.gui.MainWindow"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="bin"/>
+<!--        <zipfileset dir="data" prefix="data/"/>  -->
+<!--        <zipfileset dir="res" prefix="res/"/>    -->
+			<zipfileset dir="res" includes="lang_sorsim_labels.csv" prefix="res/"/>
+        </jar>
+    </target>
+</project>
