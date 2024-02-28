@@ -24,11 +24,14 @@ public class SimpleWrapperTest {
 	
 	public static void main(String[] args) {
 		SimpleWrapper sorsim = new SimpleWrapper();
+
+		sorsim.setFileTreeList("data/Baumliste.csv");
+		sorsim.setFileAssortmentSpecifications("data/SortimentsVorgabenListe.csv");
+		sorsim.setStemFormFunction_category(2);
+		sorsim.setBolePercentage_pct(70);
+		sorsim.setCombinationOfLengthClasses_category(5);
 		
-		sorsim.setFileBaumliste("data/Baumliste.csv");
-		sorsim.setFileSortimentsVorgaben("data/SortimentsVorgabenListe.csv");
-		
-		String[][] result = sorsim.sortimentieren();
+		String[][] result = sorsim.makeAssortments();
 		
 		for(String[] line : result) {
 			for (String field : line) {
@@ -37,7 +40,7 @@ public class SimpleWrapperTest {
 			System.out.println();
 		}
 
-		System.out.println(sorsim.getAnzahlBaumschaefte());
-		System.out.println(sorsim.getAnzahlSortimentsvorgaben());
+		System.out.println(sorsim.getNumberOfTrees());
+		System.out.println(sorsim.getNumberOfAssortmentSpecifications());
 	}
 }

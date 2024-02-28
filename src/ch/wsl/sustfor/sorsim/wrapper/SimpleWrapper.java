@@ -18,10 +18,13 @@ package ch.wsl.sustfor.sorsim.wrapper;
 import java.io.IOException;
 import java.util.List;
 
+import ch.wsl.sustfor.baumschaft.base.BaumSchaftformFunktion;
 import ch.wsl.sustfor.baumschaft.lemm1991.BaumSchaftformFkt_Lemm1991;
+import ch.wsl.sustfor.baumschaft.lfispline.BaumschaftformFkt_Lfi_Spline;
 import ch.wsl.sustfor.sorsim.controller.BaumlistenSortimentierer;
 import ch.wsl.sustfor.sorsim.controller.Presenter;
 import ch.wsl.sustfor.sorsim.model.SortimentsStueck;
+import ch.wsl.sustfor.sorsim.model.D7mBhdRelations.Standort;
 import ch.wsl.sustfor.sorsim.model.SortimentVorgabenListe.SortierKriterium;
 import ch.wsl.sustfor.sorsim.model.SortimentsVorgabe.CodeLaengenKlassen;
 import ch.wsl.sustfor.util.SortedList.SortOrder;
@@ -38,14 +41,17 @@ public class SimpleWrapper {
     
     private String fileBaumliste = "Baumliste.csv";
     private String fileSortimentsVorgaben = "SortimentsVorgabenListe.csv";
+    private String fileOutput = "Output.csv";
+    
+    private int zuVerwendenderschaftanteil = 100;
+    private CodeLaengenKlassen codeLaengenKlassen = CodeLaengenKlassen.L1;
+    private BaumSchaftformFunktion schaftformFunktion = new BaumSchaftformFkt_Lemm1991();
+    
 	
-	public SimpleWrapper() {
-		//init default values
-		baumlistSort.selectSchaftformFunktion(new BaumSchaftformFkt_Lemm1991());
-	}
-	
-	public String[][] sortimentieren() {
-        //Dateien laden
+	public String[][] makeAssortments() {
+		baumlistSort.selectSchaftformFunktion(schaftformFunktion);
+		
+        // Dateien laden
 		try {
 			readFileBaumschaefte();
 			readFileSortimentsVorgaben();
@@ -54,28 +60,37 @@ public class SimpleWrapper {
 			return new String[][]{{"Fehler beim Laden der Dateien"}};
 		}
 		
-		//Einstellungen
-		CodeLaengenKlassen codeLaenge = CodeLaengenKlassen.L1;
-		double dFuerSortimenteZuVerwendenderSchaftanteil = 1.0; 
+		// D7m berechnen, falls nötig
+		if (schaftformFunktion instanceof BaumschaftformFkt_Lfi_Spline) {
+			baumlistSort.getBsDefListe().forEach(bsDef -> bsDef.autoCalcD7mIfZero(Standort.Gut));
+		}
+		
+		// Einstellungen
+		double dFuerSortimenteZuVerwendenderSchaftanteil = zuVerwendenderschaftanteil / 100d; 
 		double dAbzopfDurchmesserOhneRinde_cm = -1;
 		double dStockhoehe_cm = -1;
 		
-		//Sortimentieren
+		// Sortimentieren
 		baumlistSort.clearSortimentsStueckListe();
 		baumlistSort.sortimentieren(
-				codeLaenge,
+				codeLaengenKlassen,
 				dFuerSortimenteZuVerwendenderSchaftanteil,
 				dAbzopfDurchmesserOhneRinde_cm,
 				dStockhoehe_cm
 				);
 		
-		//Darstellung
+		// Output-Datei speichern
+		if (fileOutput != null) {
+			presenter.writeSortimentsStueckListeToFile(baumlistSort.getSsListe(), fileOutput);
+		}
+		
+		// Darstellung
 		String[][] result = getZusammenfassungAs2dStringArray(baumlistSort.getSsListe());
 		
 		return result;
 	}
 	
-	public double getAnzahlBaumschaefte() {
+	public int getNumberOfTrees() {
 		try {
 			readFileBaumschaefte();
 		} catch (Exception e) {
@@ -84,7 +99,7 @@ public class SimpleWrapper {
 		return baumlistSort.getBsDefListe().size();
 	}
 	
-	public double getAnzahlSortimentsvorgaben() {
+	public int getNumberOfAssortmentSpecifications() {
 		try {
 			readFileSortimentsVorgaben();
 		} catch (Exception e) {
@@ -103,8 +118,8 @@ public class SimpleWrapper {
         presenter.readSortimentsVorgabenFromFile(baumlistSort.getSvListe(), fileSortimentsVorgaben);
 
 		//Sortimentsvorgaben sortieren
-		baumlistSort.getSvListe().setSortKriterium( SortierKriterium.WertProEinheit );
-		baumlistSort.getSvListe().setSortOrder( SortOrder.Descending );
+		baumlistSort.getSvListe().setSortKriterium(SortierKriterium.WertProEinheit);
+		baumlistSort.getSvListe().setSortOrder(SortOrder.Descending);
 		baumlistSort.getSvListe().sort();
 	}
 	
@@ -121,11 +136,67 @@ public class SimpleWrapper {
 		return result;
 	}
 
-	public void setFileBaumliste(String fileBaumliste) {
-		this.fileBaumliste = fileBaumliste;
+	public void setFileTreeList(String path) {
+		this.fileBaumliste = path;
 	}
 
-	public void setFileSortimentsVorgaben(String fileSortimentsVorgaben) {
-		this.fileSortimentsVorgaben = fileSortimentsVorgaben;
+	public void setFileAssortmentSpecifications(String path) {
+		this.fileSortimentsVorgaben = path;
+	}
+
+	public void setFileOutput(String path) {
+		this.fileOutput = path;
+	}
+	
+	
+	/**
+	 * 
+	 * @param value Value is rounded to the closest <code>int</code>.
+	 */
+	public void setBolePercentage_pct(double value) {
+		int intValue = round(value);
+		this.zuVerwendenderschaftanteil = intValue;
+	}
+	
+	/**
+	 * 
+	 * @param value L1=1, L2=2, L3=3, L1+L2=4, L2+L3=5, L1+L2+L3=6, residual timber=7 
+	 */
+	public void setCombinationOfLengthClasses_category(double value) {
+		int intValue = round(value);
+		
+		this.codeLaengenKlassen = switch(intValue) {
+			case 1 -> CodeLaengenKlassen.L1;
+			case 2 -> CodeLaengenKlassen.L2;
+			case 3 -> CodeLaengenKlassen.L3;
+			case 4 -> CodeLaengenKlassen.L1L2;
+			case 5 -> CodeLaengenKlassen.L2L3;
+			case 6 -> CodeLaengenKlassen.L1L2L3;
+			case 7 -> CodeLaengenKlassen.Restholz;
+			default -> throw new IllegalArgumentException("value must be in [1-7]");
+		};
+	}
+	
+	/**
+	 * 
+	 * @param value Lemm1991=1, LFI-Splines=2
+	 */
+	public void setStemFormFunction_category(double value) {
+		int intValue = round(value);
+		
+		this.schaftformFunktion = switch(intValue) {
+			case 1 -> new BaumSchaftformFkt_Lemm1991();
+			case 2 -> new BaumschaftformFkt_Lfi_Spline();
+			default -> throw new IllegalArgumentException("value must be in [1,2]");
+		};
+	}
+	
+	private static int round(double value) {
+		long longValue = Math.round(value);
+	    
+        if ((int)longValue != longValue) {
+            throw new ArithmeticException("integer overflow: " + longValue);
+        }
+        return (int)longValue;
 	}
 }
